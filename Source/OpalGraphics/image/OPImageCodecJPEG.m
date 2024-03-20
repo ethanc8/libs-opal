@@ -309,7 +309,7 @@ static void gs_jpeg_memory_dest_destroy (j_compress_ptr cinfo)
 
 @implementation CGImageSourceJPEG
 
-+ (void)load
++ (void)initialize
 {
   [CGImageSource registerSourceClass: self];
 }
@@ -538,7 +538,7 @@ static void gs_jpeg_memory_dest_destroy (j_compress_ptr cinfo)
 
 @implementation CGImageDestinationJPEG
 
-+ (void)load
++ (void)initialize
 {
   [CGImageDestination registerDestinationClass: self];
 }

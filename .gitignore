@@ -3,3 +3,6 @@ Source/opal
 
 *.swp
 *.orig
+**/.vscode
+**/compile_commands.json
+**/.cache

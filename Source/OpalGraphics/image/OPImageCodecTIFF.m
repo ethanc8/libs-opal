@@ -181,7 +181,7 @@ static void OPTIFFUnmapProc(thandle_t handle, tdata_t data, toff_t size)
 
 @implementation CGImageSourceTIFF
 
-+ (void)load
++ (void)initialize
 {
   [CGImageSource registerSourceClass: self];
 }
@@ -318,7 +318,7 @@ static void OPTIFFUnmapProc(thandle_t handle, tdata_t data, toff_t size)
 
 @implementation CGImageDestinationTIFF
 
-+ (void)load
++ (void)initialize
 {
   [CGImageDestination registerDestinationClass: self];
 }

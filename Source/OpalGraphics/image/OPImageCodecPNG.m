@@ -110,7 +110,7 @@ static bool opal_has_png_header(CGDataProviderRef dp)
 
 @implementation CGImageSourcePNG
 
-+ (void)load
++ (void)initialize
 {
   [CGImageSource registerSourceClass: self];
 }
@@ -323,7 +323,7 @@ static bool opal_has_png_header(CGDataProviderRef dp)
 
 @implementation CGImageDestinationPNG
 
-+ (void)load
++ (void)initialize
 {
   [CGImageDestination registerDestinationClass: self];
 }
