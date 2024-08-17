@@ -953,6 +953,16 @@ void CGContextClearRect(CGContextRef ctx, CGRect rect)
   OPRESTORELOGGING()
 }
 
+void CGContextFillEllipseInRect(CGContextRef ctx, CGRect rect)
+{
+  NSWarnLog(@"CGContextFillEllipseInRect is not implemented");
+}
+
+void CGContextStrokeEllipseInRect(CGContextRef ctx, CGRect rect)
+{
+  NSWarnLog(@"CGContextStrokeEllipseInRect is not implemented");
+}
+
 void CGContextStrokeLineSegments(
   CGContextRef ctx,
   const CGPoint points[],
